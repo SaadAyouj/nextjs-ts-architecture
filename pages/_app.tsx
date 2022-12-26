@@ -6,14 +6,18 @@ import '../styles/globals.css';
 
 function Layout({ children }: { children: ReactElement }) {
   return (
-    <>
+    <div>
       <Nav />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }

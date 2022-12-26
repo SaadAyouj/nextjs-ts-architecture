@@ -5,21 +5,18 @@ export interface IFooter {}
 const Footer: React.FC<IFooter> = () => {
   return (
     <>
-      <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
+      <footer className="sticky top-[100vh] p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center mb-4 sm:mb-0"
-          >
+          <a href="*" className="flex items-center mb-4 sm:mb-0">
             <Image
-              src="https://flowbite.com/docs/images/logo.svg"
+              src="https://play-lh.googleusercontent.com/pEZvyjV4HNa9dwxYB4g-YzRVmbtNEwKdo_YpGbkDucVftFAx93gXrXYJYnTaT8TaDg=w240-h480-rw"
               className="mr-3 h-8"
-              alt="Flowbite Logo"
+              alt="Logo"
               width={50}
-              height={50}
+              height={100}
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
+              Cinemax
             </span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
