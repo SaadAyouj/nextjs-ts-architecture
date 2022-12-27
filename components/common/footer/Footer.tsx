@@ -1,56 +1,90 @@
-import Image from 'next/image';
+import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export interface IFooter {}
 
 const Footer: React.FC<IFooter> = () => {
   return (
     <>
-      <footer className="sticky top-[100vh] p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <a href="*" className="flex items-center mb-4 sm:mb-0">
-            <Image
-              src="https://play-lh.googleusercontent.com/pEZvyjV4HNa9dwxYB4g-YzRVmbtNEwKdo_YpGbkDucVftFAx93gXrXYJYnTaT8TaDg=w240-h480-rw"
-              className="mr-3 h-8"
-              alt="Logo"
-              width={50}
-              height={100}
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Cinemax
-            </span>
-          </a>
-          <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                About
-              </a>
+      <div className="bg-gray-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+        <div className="p-5 ">
+          <ul>
+            <p className="text-gray-800 font-bold text-3xl pb-6">
+              Cin<span className=" text-indigo-600">ex</span>
+            </p>
+            <div className="flex gap-6 pb-5">
+              <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
+              <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+              <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
+              <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
+            </div>
+          </ul>
+        </div>
+        <div className="p-5">
+          <ul>
+            <p className="text-gray-800 font-bold text-2xl pb-4">Product</p>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Stocks
             </li>
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
-                Privacy Policy
-              </a>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Futures & Options
             </li>
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                Licensing
-              </a>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Mutual Funds
             </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact
-              </a>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Fixed deposits
             </li>
           </ul>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2022{' '}
-          <a href="https://flowbite.com/" className="hover:underline">
-            Flowbite™
-          </a>
-          . All Rights Reserved.
-        </span>
-      </footer>
+        <div className="p-5">
+          <ul>
+            <p className="text-gray-800 font-bold text-2xl pb-4">Company</p>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              About
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Products
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Pricing
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Careers
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Press & Media
+            </li>
+          </ul>
+        </div>
+        <div className="p-5">
+          <ul>
+            <p className="text-gray-800 font-bold text-2xl pb-4">Support</p>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Contact
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Support Portals
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              List Of Charges
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Downloads & Resources
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+              Videos
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
+        <h1 className=" text-gray-800 font-semibold">
+          © 2021-2022 All rights reserved | Build with ❤ by{' '}
+          <span className="hover:text-blue-600 font-semibold cursor-pointer">
+            Saad Ayouj{' '}
+          </span>
+        </h1>
+      </div>
     </>
   );
 };
