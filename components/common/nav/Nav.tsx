@@ -6,9 +6,7 @@ export interface INav {}
 const Nav: React.FC<INav> = () => {
   let Links = [
     { name: 'HOME', link: '/' },
-    { name: 'SERVICE', link: '/' },
     { name: 'ABOUT', link: '/' },
-    { name: "BLOG'S", link: '/' },
     { name: 'CONTACT', link: '/' },
   ];
   let [open, setOpen] = useState(false);
